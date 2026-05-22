@@ -35,13 +35,28 @@ class FightService
 
     private function randomHeroImage(): string
     {
-        $images = glob(public_path('images/heroes/*.{jpg,jpeg,png,webp}'), GLOB_BRACE);
+        $images = [
+            'images/heroes/hero-1.jpeg',
+            'images/heroes/hero-2.jpeg',
+            'images/heroes/hero-3.jpeg',
+            'images/heroes/hero-4.jpeg',
+            'images/heroes/hero-5.jpeg',
+            'images/heroes/hero-6.jpeg',
+            'images/heroes/hero-7.jpeg',
+            'images/heroes/hero-8.jpeg',
+            'images/heroes/hero-9.jpeg',
+            'images/heroes/hero-10.jpeg',
+            'images/heroes/hero-11.jpeg',
+            'images/heroes/hero-12.jpeg',
+            'images/heroes/hero-13.jpeg',
+            'images/heroes/hero-14.jpeg',
+            'images/heroes/hero-15.jpeg',
+            'images/heroes/hero-16.jpeg',
+            'images/heroes/hero-17.jpeg',
+            'images/heroes/hero-18.jpeg',
+        ];
 
-        if (empty($images)) {
-            return 'images/heroes/hero-1.jpg';
-        }
-
-        return 'images/heroes/' . basename($images[array_rand($images)]);
+        return $images[array_rand($images)];
     }
 
     public function saveFightLog(int $turn, string $description): void

@@ -40,17 +40,11 @@ class FightController extends Controller
         $playerA = $this->fightService->createPlayer();
         $playerB = $this->fightService->createPlayer();
 
-        // $fight = Fight::create([
-        //     'player_a' => $playerA['name'],
-        //     'player_b' => $playerB['name'],
-        // ]);
-
         session([
             'playerA' => $playerA,
             'playerB' => $playerB,
             'logs' => [],
             'turn' => 1,
-            // 'fight_id' => $fight->id,
             'current_attacker' => rand(0, 1) === 0 ? 'A' : 'B',
             'game_over' => false,
             'game_started' => true,
