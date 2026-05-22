@@ -6,7 +6,7 @@ https://phpheroes.infinityfreeapp.com
 **GitHub Repository:**
 https://github.com/Alexey-Zanevsky/php-heroes.git
 
-PHP Heroes is a turn-based browser game created with Laravel and Bootstrap.  
+PHP Heroes is a turn-based browser game created with Laravel.  
 The application generates two random heroes with unique statistics and spells. Players fight each other until one hero wins the battle.
 
 # Screenshots
@@ -43,7 +43,6 @@ The application generates two random heroes with unique statistics and spells. P
 - Random spell system
 - Battle logs
 - Fight history
-- Responsive user interface
 - Dynamic UI updates using JavaScript and Fetch API
 
 # System Requirements
@@ -115,9 +114,13 @@ Or manually copy the contents of the .env.example to .env file(create .env).
 Open the .env file and modify:
 
 *DB_CONNECTION=mysql*
+
 *DB_HOST=127.0.0.1*
+
 *DB_PORT=3306*
+
 *DB_DATABASE=php_heroes*
+
 *DB_USERNAME=root*
 
 *DB_PASSWORD=*
