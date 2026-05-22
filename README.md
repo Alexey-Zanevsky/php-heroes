@@ -1,9 +1,9 @@
 # PHP Heroes
 
-# Live Demo
+**Live Demo:**
 https://phpheroes.infinityfreeapp.com
 
-# GitHub Repository
+**GitHub Repository:**
 https://github.com/Alexey-Zanevsky/php-heroes.git
 
 PHP Heroes is a turn-based browser game created with Laravel and Bootstrap.  
@@ -67,22 +67,22 @@ The project was developed using:
 - DBngin (for local MySQL server management)
 - phpMyAdmin / TablePlus / DBeaver (optional database management tools)
 
-## How to run this game locally?
+# How to run this game locally?
 
 ## 1. Clone the repository
 Open terminal and clone the repository:
 
-git clone https://github.com/Alexey-Zanevsky/php-heroes.git
+*git clone https://github.com/Alexey-Zanevsky/php-heroes.git*
 
 ## 2. Enter the project directory
 In terminal:
 
-cd php-heroes
+*cd php-heroes*
 
 ## 3. Open the project in Visual Studio Code
 You can write this in terminal:
 
-code .
+*code .*
 
 Or manually open the folder in VS Code.
 
@@ -95,57 +95,58 @@ Set the parameters as shown in the image
 ## 5. Install PHP dependencies
 Return to the project terminal window. Run this command:
 
-composer install
+_composer install_
 
 It installs all Laravel and PHP dependencies.
 
 ## 6. Install frontend dependencies
 Run this command, to install bootstrap, vite, js packages:
 
-npm install
+_npm install_
 
 ## 7. Create the .env file
 Run this command:
 
-cp .env.example .env
+_cp .env.example .env_
 
 Or manually copy the contents of the .env.example to .env file(create .env).
 
 ## 8. Configure database connection
 Open the .env file and modify:
 
-DB_CONNECTION=mysql
-DB_HOST=127.0.0.1
-DB_PORT=3306
-DB_DATABASE=php_heroes
-DB_USERNAME=root
-DB_PASSWORD=
+*DB_CONNECTION=mysql*
+*DB_HOST=127.0.0.1*
+*DB_PORT=3306*
+*DB_DATABASE=php_heroes*
+*DB_USERNAME=root*
+
+*DB_PASSWORD=*
 
 Adjust values according to your local MySQL configuration.
 
 ## 9. Generate Laravel Application Key
 Run this command:
 
-php artisan key:generate
+_php artisan key:generate_
 
 It generates the application encryption key required by Laravel.
 
 ## 10. Run Database Migrations
 Run this command to creates all required database tables:
 
-php artisan migrate
+_php artisan migrate_
 
 ## 11. Build Frontend Assets
 Run this command:
 
-npm run build
+_npm run build_
 
 It generates production frontend assets inside the public/build directory.
 
 ## 12. Start Local Development Server
 Run this command to start a local server:
 
-php artisan serve
+_php artisan serve_
 
 Example OUTPUT: INFO  Server running on [http://127.0.0.1:8000].
 
